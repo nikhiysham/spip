@@ -18,22 +18,27 @@ export class MyApp {
     pages: Array<{id: number, title: string, icon: string, component: any}>;
 
     constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
-        this.initializeApp();
+        platform.ready().then(() => {
 
-        // used for an example of ngFor and navigation
-        this.pages = [
-            {id: 1, title: 'Nama User', icon: 'ios-contact-outline', component: HomePage},
-            {id: 2, title: 'Hotel', icon: 'ios-albums-outline', component: HomePage},
-            {id: 3, title: 'Agensi Pelancongan', icon: 'ios-jet-outline', component: HomePage},
-            {id: 4, title: 'Kenderaan Pelancongan', icon: 'ios-car-outline', component: CarPage},
-            {id: 5, title: 'SPA/Pusat Urutan Kaki', icon: 'ios-american-football-outline', component: HomePage},
-            {id: 6, title: 'Institut Latihan Pelancongan', icon: 'ios-contacts-outline', component: HomePage},
-            {id: 7, title: 'Pemandu Pelancong', icon: 'ios-contacts-outline', component: HomePage},
-            {id: 8, title: 'Notification', icon: 'ios-notifications-outline', component: HomePage},
-            {id: 9, title: 'Tetapan', icon: 'ios-cog-outline', component: HomePage},
-            {id: 10, title: 'Log Keluar', icon: 'ios-log-out-outline', component: HomePage},
-        ];
+            statusBar.styleDefault();
+            splashScreen.hide();
 
+            this.initializeApp();
+
+            // used for an example of ngFor and navigation
+            this.pages = [
+                {id: 1, title: 'Nama User', icon: 'ios-contact-outline', component: HomePage},
+                {id: 2, title: 'Hotel', icon: 'ios-albums-outline', component: HomePage},
+                {id: 3, title: 'Agensi Pelancongan', icon: 'ios-jet-outline', component: HomePage},
+                {id: 4, title: 'Kenderaan Pelancongan', icon: 'ios-car-outline', component: CarPage},
+                {id: 5, title: 'SPA/Pusat Urutan Kaki', icon: 'ios-american-football-outline', component: HomePage},
+                {id: 6, title: 'Institut Latihan Pelancongan', icon: 'ios-contacts-outline', component: HomePage},
+                {id: 7, title: 'Pemandu Pelancong', icon: 'ios-contacts-outline', component: HomePage},
+                {id: 8, title: 'Notification', icon: 'ios-notifications-outline', component: HomePage},
+                {id: 9, title: 'Tetapan', icon: 'ios-cog-outline', component: HomePage},
+                {id: 10, title: 'Log Keluar', icon: 'ios-log-out-outline', component: HomePage},
+            ];
+        });
     }
 
     initializeApp() {
@@ -55,8 +60,8 @@ export class MyApp {
             this.nav.setRoot(page.component);
         }
     }
-    
+
     goHome() {
-         this.nav.setRoot(HomePage);
+        this.nav.setRoot(HomePage);
     }
 }
