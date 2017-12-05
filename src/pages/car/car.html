@@ -1,0 +1,31 @@
+<ion-header class="custom-navbar">
+    <ion-navbar>
+        <button ion-button menuToggle end>
+            <ion-icon name="ios-notifications" color="white"></ion-icon>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title><ion-icon name="ios-home" color="white" (click)="goHome()"></ion-icon></ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col text-center>
+                <ion-img src="assets/imgs/truck-red.png" style="vertical-align: middle"></ion-img>
+                <span class="content-title">Kenderaan Pelancongan</span>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-searchbar
+        style="background:red; margin:5px !important; "
+        [(ngModel)]="myInput"
+        [showCancelButton]="shouldShowCancel"
+        (ionInput)="getItems($event)">
+    </ion-searchbar>
+    <ion-list class="car-list">
+        <ion-item *ngFor="let item of items" color="custom-secondary" style="margin-bottom:5px !important">
+            {{item.note}}
+    </ion-item>
+</ion-list>
+</ion-content>
+

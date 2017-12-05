@@ -1,0 +1,17 @@
+page-home {
+    .button-box {
+        background: color($colors, custom-secondary);
+        margin:5px;
+        padding:25px;
+    }
+
+    .button-title {
+        font-size:8px;
+        text-transform: none !important;
+        color: white;
+    }
+
+    .button-box .button-inner{
+        flex-direction : column;
+    }
+}

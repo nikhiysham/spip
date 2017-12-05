@@ -1,0 +1,11 @@
+page-car {
+    .content-title {
+        font-size:20px; 
+        color: color($colors, custom-secondary);
+    }
+    
+    .car-list.list-md {
+        /*margin-right: 5px !important;*/ 
+        margin: -1px 5px 16px !important;
+    }
+}

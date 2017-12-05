@@ -1,0 +1,125 @@
+body {
+    /*color:#000;*/
+}
+
+.header-img img {
+    width: 100% !important;
+}
+
+.header-img {
+    width:100% !important;
+}
+
+.middle {
+    /*height:100% !important;*/
+}
+
+.bottom {
+    /*border-top: 1px solid #999;*/
+    position: absolute;
+    bottom: 0;
+    width: 100% !important;
+    /*height: 100px;*/
+    background: url("../assets/imgs/bottom.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 25px;
+}
+
+.top-title {
+    position:absolute;
+    width:100%; 
+    margin-top:-50px;
+}
+
+.button-md:hover:not(.disable-hover) {
+    background-color: #CCC !important;
+}
+
+.middle-title {
+    background-color: #bf1e2e;
+    width:100%;
+    min-height: 400px !important;
+    padding-top:60px !important;
+}
+
+.bottom-title {
+    background-color: #ee1c25;
+    width:100%;
+    min-height:50px !important;
+    /*margin-bottom: -5px !important;*/
+}
+
+.custom-navbar {
+    background: url('../imgs/header.png') no-repeat 100%;
+    width:100% !important;
+    background-size:cover;
+    /*height:100px !important;*/
+    /*color:#FFF;*/
+}
+
+.custom-navbar .toolbar-background-md {
+    background: transparent !important;
+}
+
+.toolbar-title {
+    color: #FFF !important;
+}
+
+.bar-button {
+    color: #FFF !important;
+}
+
+ion-title {
+    color:#FFF
+}
+
+.header img {
+    width:100% !important;
+}
+
+.padding-10 {
+    width:100%;
+    padding:10px;
+}
+
+.padding-5 {
+    width:100%;
+    padding:5px;
+}
+
+.textfield {
+    border:1px solid #CCC;
+    border-radius: 10px;
+    font-size:12px;
+    background : #FFF;
+    height:30px !important;
+}
+
+.text-input-md {
+    margin:5px 8px !important;
+}
+
+.bottom-help {
+    color:white; 
+    font-size:10px
+}
+
+.bottom-mark {
+    font-size:10px; 
+    color: #000; 
+    margin-top:20px; 
+    padding:0 !important
+}
+
+.searchbar-md .searchbar-search-icon {
+    top: 5px !important;
+}
+
+.searchbar-md .searchbar-input {
+    padding: 0px 45px !important;
+}
+
+ion-searchbar {
+    width:auto !important
+}
