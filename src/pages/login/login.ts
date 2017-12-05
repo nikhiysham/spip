@@ -10,7 +10,7 @@ import {CommonProvider} from '../../providers/common/common';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+//@IonicPage()
 @Component({
     selector: 'page-login',
     templateUrl: 'login.html',
