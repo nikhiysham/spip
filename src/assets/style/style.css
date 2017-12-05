@@ -17,13 +17,16 @@ body {
 .bottom {
     /*border-top: 1px solid #999;*/
     position: absolute;
-    bottom: 0;
+    /*bottom: 0;*/
     width: 100% !important;
     /*height: 100px;*/
-    background: url("../assets/imgs/bottom.png");
+}
+
+.bottom-bg {
+    background: url("../imgs/bottom.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 25px;
+    background-size: cover;
+    background-position-y: -10px;
 }
 
 .top-title {
@@ -39,7 +42,7 @@ body {
 .middle-title {
     background-color: #bf1e2e;
     width:100%;
-    min-height: 400px !important;
+    min-height: 350px !important;
     padding-top:60px !important;
 }
 
